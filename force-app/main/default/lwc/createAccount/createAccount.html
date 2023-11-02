@@ -1,0 +1,13 @@
+<template>
+<lightning-card title="Create Account">
+    <lightning-input label="Name:"  onchange={handlename}></lightning-input>
+    <lightning-input label="Phone:"  onchange={handlephone}></lightning-input>
+    
+    <lightning-combobox
+            label="Industry:"
+            value={value}
+            options={options}
+            onchange={handleindustry} ></lightning-combobox>
+<lightning-button label="Create Account" onclick={handleclick}></lightning-button>
+</lightning-card>
+</template>
